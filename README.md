@@ -1,9 +1,11 @@
 # Shell--scripting
-
+types of shell scripting
+shell scripting files
+how to execute scripts
 ##Topic
 
-'''
-...
+````
+
 1.she-bang
 2.print
 3.variables
@@ -14,5 +16,5 @@
 8.loops
 9.sed editor
 
-'''
+``
 -------------
