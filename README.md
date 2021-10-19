@@ -1,9 +1,30 @@
 # Shell--scripting
-types of shell scripting
-shell scripting files
-how to execute scripts
-##Topic
 
+##Topic
+Types of shell scripting
+------
+1.SH,BASH,KSH,CSH,ZSH
+2.our choice is BASH
+
+Reasons:
+1.Bash is default in redhat family os
+2.BASH is having the features of SH, KSH,CSH
+3.In Redhat family os SH and Bash are same
+
+
+shell scripting files
+-------------------
+1.sh
+2.bash
+
+extenstions are only for our understandings usuallywe use `.sh`
+
+
+how to execute scripts
+------
+````
+$ bash  script.sh
+$ sh script.sh
 ````
 
 1.she-bang
@@ -18,3 +39,5 @@ how to execute scripts
 
 ``
 -------------
+jksdnjkndsj
+----------------
