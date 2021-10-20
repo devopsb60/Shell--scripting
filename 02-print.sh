@@ -13,3 +13,5 @@ echo welcome
 #escape sequence "\n new line","\t tab "
 
 echo -e "welcocome \nindia"
+
+echo -e "venkat\treddy"
