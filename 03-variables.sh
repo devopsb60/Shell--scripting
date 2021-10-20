@@ -22,5 +22,6 @@ echo ${x}*${y}=200
 Date=$(date +%F)
 echo good morning today is $Date
 #Arithamatic substitution
-echo $((x+y))
+ADD=$((3+5*10))
+echo ADD
 
