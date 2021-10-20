@@ -14,4 +14,4 @@ echo welcome
 
 echo -e "welcocome \nindia"
 
-echo -e "venkat\treddy"
+echo -e "venkat \t\treddy"
