@@ -30,9 +30,9 @@ echo -e "venkat \t\treddy"
 ##cyan       36
 
 
-echo  -e "\e[31mtext in red colour"
-echo -e "\e[32mtext in red colour"
-echo -e "\e[33mtext in yellow colour"
-echo -e "\e[34mtext in blue colour"
-echo -e "\e[35mtext in maganta colour"
-echo -e "\e[36mtext in cyan colour"
+echo  -e "\e[31mtext in red color"
+echo -e "\e[32mtext in green color"
+echo -e "\e[33mtext in yellow color"
+echo -e "\e[34mtext in blue color"
+echo -e "\e[35mtext in maganta color"
+echo -e "\e[36mtext in cyan color"
