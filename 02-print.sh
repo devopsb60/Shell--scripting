@@ -36,3 +36,10 @@ echo -e "\e[33mtext in yellow color"
 echo -e "\e[34mtext in blue color"
 echo -e "\e[35mtext in maganta color"
 echo -e "\e[36mtext in cyan color"
+
+#color always follows
+
+echo -e "\e[33mreddy"
+echo cvreddy
+
+
