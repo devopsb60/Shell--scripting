@@ -10,4 +10,6 @@
 echo Hello World
 echo welcome
 
+#escape sequence "\n new line","\t tab "
 
+echo -e "welcomeonboard\nindia"
