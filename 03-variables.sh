@@ -21,4 +21,6 @@ echo ${x}*${y}=200
 #date=2021-10-20
 Date=$(date +%F)
 echo good morning today is $Date
+#Arithamatic substitution
+echo $((x+y))
 
