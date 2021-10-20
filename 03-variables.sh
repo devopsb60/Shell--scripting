@@ -25,3 +25,5 @@ echo good morning today is $Date
 ADD=$((3+5*10))
 echo $ADD
 
+echo course name =$course_name
+
