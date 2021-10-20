@@ -11,3 +11,7 @@ echo Hello World
 echo welcome
 
 
+# ESC Sequences ,\n (new line) , \e (new tab)
+#to enable any escape sequence we go with -e option and input should be in double quotes""
+
+echo -e "hello world\nwelcome"
