@@ -37,9 +37,9 @@ echo -e "\e[34mtext in blue color"
 echo -e "\e[35mtext in maganta color"
 echo -e "\e[36mtext in cyan color"
 
-#color always follows
+#color always follows so its our responsibility to disable it
 
-echo -e "\e[33mreddy"
+echo -e "\e[33mreddy\e[0m"
 echo cvreddy
 
 
