@@ -18,6 +18,7 @@ x=20
 y=20
 
 echo ${x}*${y}=200
-date=2021-10-20
+#date=2021-10-20
+Date=$(date +%f)
+echo good morning today is $Date
 
-echo good morning today is $date
