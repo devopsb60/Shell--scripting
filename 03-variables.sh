@@ -23,5 +23,5 @@ Date=$(date +%F)
 echo good morning today is $Date
 #Arithamatic substitution
 ADD=$((3+5*10))
-echo ADD
+echo $ADD
 
