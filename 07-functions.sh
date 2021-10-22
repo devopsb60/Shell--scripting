@@ -16,7 +16,7 @@ xyz(){
 }
 ##Main Program
 a=10
-abc
+abc $1
 echo b in main program is =$b
 xyz
 echo first argument in main program  =$1
