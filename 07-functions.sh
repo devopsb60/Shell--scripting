@@ -6,7 +6,9 @@
 function abc(){
   echo i am a function abc
 }
-
+xyz(){
+  echo i am a function xyz
+}
 ##Main Program
 abc
 
