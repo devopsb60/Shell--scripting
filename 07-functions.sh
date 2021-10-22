@@ -5,11 +5,17 @@
 
 function abc(){
   echo i am a function abc
+  echo a in function is =$a
+  b=20
 }
 xyz(){
   echo i am a function xyz
 }
 ##Main Program
 abc
+a=10
+echo b in main program is =$b
+xyz
+
 
 
