@@ -8,6 +8,8 @@ function abc(){
   a=1
   echo a in function is =$a
   b=20
+
+echo first argument in function =$1
 }
 xyz(){
   echo i am a function xyz
@@ -17,6 +19,7 @@ a=10
 abc
 echo b in main program is =$b
 xyz
+echo first argument in main program  =$1
 
 
 
