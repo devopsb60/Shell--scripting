@@ -5,6 +5,9 @@
 
 funstions abc(){
   echo i am a function abc
-  
 }
+
+##Main Program
+abc
+
 
