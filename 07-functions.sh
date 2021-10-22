@@ -13,8 +13,8 @@ xyz(){
   echo i am a function xyz
 }
 ##Main Program
-abc
 a=10
+abc
 echo b in main program is =$b
 xyz
 
