@@ -8,7 +8,7 @@ function abc(){
   a=1
   echo a in function is =$a
   b=20
-
+return
 echo first argument in function =$1
 }
 xyz(){
@@ -18,6 +18,7 @@ xyz(){
 a=10
 abc $1
 echo b in main program is =$b
+echo exit status of abc=$?
 xyz
 echo first argument in main program  =$1
 
