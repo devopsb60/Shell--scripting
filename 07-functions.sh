@@ -5,6 +5,7 @@
 
 function abc(){
   echo i am a function abc
+  a=1
   echo a in function is =$a
   b=20
 }
