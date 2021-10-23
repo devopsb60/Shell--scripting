@@ -1,5 +1,6 @@
 name:
-	@true
+#	@true
+	echo -e "One - Target one \nTwo- Target two"
 one:
 	@echo one
 
