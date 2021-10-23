@@ -1,3 +1,5 @@
+name:
+	@true
 one:
 	@echo one
 
