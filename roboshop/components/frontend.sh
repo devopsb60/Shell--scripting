@@ -3,8 +3,12 @@
 Print(){
   echo -e "\e[1m$1\e[0m"
 }
+
+Log=/tmp/roboshop.log
+rm -f $Log
+
 Print "installing nginx"
-yum install nginx -y
+yum install nginx -y &>>$Log
 
 Print  "enabling nginx"
 systemctl enable nginx
