@@ -12,9 +12,9 @@ Print "installing nginx"
 yum install nginx -y &>>$Log
 
 Print  "enabling nginx"
-systemctl enable nginx
+systemctl enable nginx  &>>$Log
 Print "restarting nginx"
-systemctl start nginx
+systemctl start nginx &>>$Log
 #Let's download the HTDOCS content and deploy under the Nginx path.
 
 exit
