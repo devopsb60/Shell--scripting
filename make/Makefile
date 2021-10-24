@@ -1,8 +1,12 @@
-name:
+#name:
 #	@true
-	echo -e "One - Target one \nTwo- Target two"
-one:
-	@echo one
+	#echo -e "One - Target one \nTwo- Target two"
 
-two:
+help:
+	@grep `####` Makefile
+one:#### Target one
+	@echo one
+two:#### Target two
 	@echo two
+ ## target
+ ##		rules
