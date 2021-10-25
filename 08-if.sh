@@ -8,3 +8,9 @@ then
   else
     echo "its not root user"
   fi
+
+  if [$UID -eq 0]; then
+    echo "you are not root user"
+    else
+      echo "you are root user"
+      fi
