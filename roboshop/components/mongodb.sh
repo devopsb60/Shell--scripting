@@ -1,4 +1,5 @@
 #!/bin/bash
+source components/mongodb.sh
 ##Setup MongoDB repos.
 print "download repo"
 curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo
