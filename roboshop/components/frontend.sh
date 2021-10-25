@@ -11,10 +11,16 @@ rm -f $Log
 Print "installing nginx"
 yum install nginx -y &>>$Log
 
+if [ $? -eq 0 ]; then
+  echo -e "\e[1;32msuccess\e[0m"
+  else
+    echo -e "\e[1;31mFail\e[0m"
+    fi
+
 Print  "enabling nginx"
-systemctl enable nginx  &>>$Log
+systemctl enable nginx
 Print "restarting nginx"
-systemctl start nginx &>>$Log
+systemctl start nginx
 #Let's download the HTDOCS content and deploy under the Nginx path.
 
 exit
