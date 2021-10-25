@@ -15,7 +15,7 @@ stat $?
 #Let's download the HTDOCS content and deploy under the Nginx path.
 
 ##exit
-print "download html pages"
+Print "download html pages"
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>$Log
 stat $?
 
@@ -23,10 +23,10 @@ Print "downloaded the main in the repo provided "
 #Deploy in Nginx Default Location.
 
 cd /usr/share/nginx/html
-print"remove the old HTML Pages"
+Print"remove the old HTML Pages"
 rm -rf *
 stat $?
-print"unzip the frontendfile"
+Print"unzip the frontendfile"
 unzip /tmp/frontend.zip &>>$Log
 stat $?
 mv frontend-main/* .
