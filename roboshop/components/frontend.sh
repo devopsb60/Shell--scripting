@@ -1,8 +1,16 @@
 #!/bin/bash
 
 Print(){
-  echo -e "\e[1m$1\e[0m"
+  echo -n -e "\e[1m$1\e[0m"
   echo -e "\n\e[36m=====================$1====================\e[0m" >>$Log
+}
+
+stat(){
+  if [ $1 -eq 0 ]; then
+    echo -e "\e[1;32msuccess\e[0m"
+    else
+      echo -e "\e[1;31mFail\e[0m"
+      fi
 }
 
 Log=/tmp/roboshop.log
@@ -10,17 +18,16 @@ rm -f $Log
 
 Print "installing nginx"
 yum install nginx -y &>>$Log
+stat $?
 
-if [ $? -eq 0 ]; then
-  echo -e "\e[1;32msuccess\e[0m"
-  else
-    echo -e "\e[1;31mFail\e[0m"
-    fi
 
 Print  "enabling nginx"
 systemctl enable nginx
+stat $?
+
 Print "restarting nginx"
 systemctl start nginx
+stat $?
 #Let's download the HTDOCS content and deploy under the Nginx path.
 
 exit
