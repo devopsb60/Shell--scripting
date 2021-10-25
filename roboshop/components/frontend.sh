@@ -14,7 +14,7 @@ systemctl start nginx
 stat $?
 #Let's download the HTDOCS content and deploy under the Nginx path.
 
-exit
+##exit
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 print "downloaded the main in the repo provided "
 #Deploy in Nginx Default Location.
