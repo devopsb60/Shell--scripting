@@ -16,7 +16,7 @@ stat $?
 
 ##exit
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
-print "downloaded the main in the repo provided "
+Print "downloaded the main in the repo provided "
 #Deploy in Nginx Default Location.
 
 cd /usr/share/nginx/html
@@ -29,4 +29,4 @@ mv localhost.conf /etc/nginx/default.d/roboshop.conf
 #Finally restart the service once to effect the changes.
 
 systemctl restart nginx
-print "nginx is restarted"
+Print "nginx is restarted"
