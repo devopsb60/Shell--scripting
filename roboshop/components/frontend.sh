@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source compnents/common.sh
 Print "installing nginx"
 yum install nginx -y &>>$Log
 stat $?
