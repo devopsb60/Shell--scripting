@@ -14,10 +14,10 @@ systemctl start nginx
 stat $?
 #Let's download the HTDOCS content and deploy under the Nginx path.
 
-
+exit
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
-print "downloaded the main in the "
-3Deploy in Nginx Default Location.
+print "downloaded the main in the repo provided "
+#Deploy in Nginx Default Location.
 
 cd /usr/share/nginx/html
 rm -rf *
@@ -29,3 +29,4 @@ mv localhost.conf /etc/nginx/default.d/roboshop.conf
 #Finally restart the service once to effect the changes.
 
 systemctl restart nginx
+print "nginx is restarted"
