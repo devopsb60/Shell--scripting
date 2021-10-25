@@ -22,18 +22,26 @@ stat $?
 Print "downloaded the main in the repo provided "
 #Deploy in Nginx Default Location.
 
-cd /usr/share/nginx/html
+cd /usr/share/nginx/html &>>$Log
 Print "remove the old HTML Pages"
-rm -rf *
+rm -rf * &>>$Log
 stat $?
 Print "unzip the frontendfile"
-unzip /tmp/frontend.zip &>>$Log
+unzip -o /tmp/frontend.zip &>>$Log
 stat $?
-mv frontend-main/* .
-mv static/* .
+
+Print "move frontend ngixn file"
+mv frontend-main/* . &>>$Log
+stat $?
+
+Print "moving static file"
+mv static/* . &>>$Log
+stat $?
+
 rm -rf frontend-master static README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 #Finally restart the service once to effect the changes.
 
-systemctl restart nginx
 Print "nginx is restarted"
+systemctl restart nginx  &>>$Log
+stat $?
