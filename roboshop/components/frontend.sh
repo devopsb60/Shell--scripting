@@ -23,10 +23,10 @@ Print "downloaded the main in the repo provided "
 #Deploy in Nginx Default Location.
 
 cd /usr/share/nginx/html
-Print"remove the old HTML Pages"
+Print "remove the old HTML Pages"
 rm -rf *
 stat $?
-Print"unzip the frontendfile"
+Print "unzip the frontendfile"
 unzip /tmp/frontend.zip &>>$Log
 stat $?
 mv frontend-main/* .
