@@ -11,11 +11,11 @@ stat $?
 
 Print "enable mongoDB"
 systemctl enable mongod  &>>$Log
-Stat $?
+stat $?
 
 Print "Start MongoDB"
 systemctl start mongod  &>>$Log
-Stat $?
+stat $?
 
 ##Update Liste IP address from 127.0.0.1 to 0.0.0.0 in config file
 ## sed -i "edit the file directly"-e /s/root/Root/g;- edit
