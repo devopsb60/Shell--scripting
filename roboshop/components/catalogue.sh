@@ -32,8 +32,8 @@ stat $?
 
 Print "change to directory and install"
 cd /home/roboshop/catalogue
-npm install &>>$Log
-stst $?
+npm install --unsafe-perm &>>$Log
+stat $?
 
 ##NOTE: We need to update the IP address of MONGODB Server in systemd.service file
 ##Now, lets set up the service with systemctl.
