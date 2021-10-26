@@ -18,7 +18,7 @@ stat $?
 # sed -i -e '1 a hellw ' file
 #sed -i -e /etc/mongod
 
-Print"Update the mongod.conf"
+Print "Update the mongod.conf"
 sed -i -e 's/127.0.0.1/0.0.0.0/g' /etc/momgod.conf &>>$Log
 ##Config file: /etc/mongod.conf
 stat $?
@@ -35,16 +35,16 @@ stat $?
 ##Every Database needs the schema to be loaded for the application to work.
 ##Download the schema and load it.
 
-Print"donwloading schema"
+Print "donwloading schema"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip" &>>$Log
 stat $?
 
-Print"unzip the schema"
+Print "unzip the schema"
 cd /tmp
 unzip -o mongodb.zip
 stat $?
 
-Print"Load Schema"
+Print "Load Schema"
 cd mongodb-main
 mongo < catalogue.js &>>$Log
 mongo < users.js &>>$Log
