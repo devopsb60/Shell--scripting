@@ -5,7 +5,12 @@ yum install nodejs make gcc-c++ -y &>>$Log
 stat $?
 
 Print "useradd roboshop"
-useradd roboshop
+id roboshop &>>$Log
+if [ $? -eq 0 ];then
+  echo "user already exists"
+  else
+useradd roboshop &>>$Log
+fi
 stat $?
 #So let's switch to the roboshop user and run the following commands.
 
@@ -17,19 +22,29 @@ Print "remove old file"
 rm -rf /home/roboshop/catalogue &>>$Log
 stat $?
 
-print "extract the zip file"
+Print "extract the zip file"
 unzip  -o -d /home/roboshop /tmp/catalogue.zip &>>$Log
 stat $?
 
-exit
-Print "Movefiles"
-$ mv catalogue-main catalogue
-$ cd /home/roboshop/catalogue
-$ npm install
-NOTE: We need to update the IP address of MONGODB Server in systemd.service file
-Now, lets set up the service with systemctl.
+Print "Move files to catlaogue"
+$ mv /home/roboshop/catalogue-main  /home/roboshop/catalogue &>>$Log
+stat $?
 
-# mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
-# systemctl daemon-reload
-# systemctl start catalogue
-# systemctl enable catalogue
+Print "change to directory and install"
+$ cd /home/roboshop/catalogue
+$ npm install &>>$Log
+stst $?
+
+##NOTE: We need to update the IP address of MONGODB Server in systemd.service file
+##Now, lets set up the service with systemctl.
+exit
+
+Print "moving the services to catlogue"
+mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service &>>$Log
+stat $?
+
+Print "Restart the service"
+systemctl daemon-reload &>>$Log
+systemctl start catalogue &>>$Log
+systemctl enable catalogue &>>$Log
+stat $?
