@@ -19,7 +19,7 @@ stat $?
 #sed -i -e /etc/mongod
 
 Print "Update the mongod.conf"
-sed -i -e 's/127.0.0.1/0.0.0.0/g' /etc/momgod.conf &>>$Log
+sed -i -e 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf &>>$Log
 ##Config file: /etc/mongod.conf
 stat $?
 
