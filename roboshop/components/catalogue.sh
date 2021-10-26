@@ -31,8 +31,8 @@ mv /home/roboshop/catalogue-main  /home/roboshop/catalogue &>>$Log
 stat $?
 
 Print "change to directory and install"
-$ cd /home/roboshop/catalogue
-$ npm install &>>$Log
+cd /home/roboshop/catalogue
+npm install &>>$Log
 stst $?
 
 ##NOTE: We need to update the IP address of MONGODB Server in systemd.service file
