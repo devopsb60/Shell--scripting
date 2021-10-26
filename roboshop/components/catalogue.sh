@@ -27,7 +27,7 @@ unzip  -o -d /home/roboshop /tmp/catalogue.zip &>>$Log
 stat $?
 
 Print "Move files to catlaogue"
-$ mv /home/roboshop/catalogue-main  /home/roboshop/catalogue &>>$Log
+mv /home/roboshop/catalogue-main  /home/roboshop/catalogue &>>$Log
 stat $?
 
 Print "change to directory and install"
