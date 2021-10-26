@@ -1,19 +1,19 @@
 #!/bin/bash
 source components/common.sh
 ##Setup MongoDB repos.
-print "download repo"
+Print "download repo"
 curl -s -o /etc/yum.repos.d/mongodb.repo https://raw.githubusercontent.com/roboshop-devops-project/mongodb/main/mongo.repo
 stat $?
 ##Install Mongo & Start Service.
-print "Install MongoDB"
+Print "Install MongoDB"
 yum install -y mongodb-org  &>>$Log
 stat $?
 
-print "enable mongoDB"
+Print "enable mongoDB"
 systemctl enable mongod  &>>$Log
 Stat $?
 
-print "Start MongoDB"
+Print "Start MongoDB"
 systemctl start mongod  &>>$Log
 Stat $?
 
